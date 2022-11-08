@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans|Signika+Negative");
+
+:root {
+  --primaryColor: #f3a7a0;
+  --secondaryColor: #000c45;
+  --fontColor: #222;
+  --whiteColor: #f5f5f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: sans-serif;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  height: auto;
+}
+
+nav a{
+  text-decoration:wavy;
+}
+
+nav .my_logo{
+  color:gold;
+  font-style: italic;
+}
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  padding: 2rem;
+  right: 0;
+  top: 0;
+  position: fixed;
+  z-index: 3;
+  background-color: var(--secondaryColor);
+}
+
+
+.navbar .menu {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar .menu>a {
+  text-decoration: none;
+  color: var(--primaryColor);
+}
+
+.navbar .menu>a:hover {
+  color: var(--whiteColor);
+}
+
+
+
+.padding-big {
+ 
+  background-color: brown;
+  padding: 50px 3%;
+}
+
+blockquote,
+img {
+  border-radius: 10px;
+}
+
+blockquote,
+img,
+strong.block {
+  display: block;
+  position: relative;
+}
+
+
+h1 {
+  padding-top: 1em;
+}
+
+
+h1,
+h2,
+h3 {
+  font-family: "Signika Negative", sans-serif;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+li,
+p,
+strong {
+  font-weight: 400;
+}
+
+h2,
+h3 {
+  margin: 40px 0 0 0;
+
+}
+
+li {
+  font-family: "PT Sans", sans-serif;
+  word-spacing: 2px;
+  color: #ccffcc;
+}
+
+p {
+  font-family: "PT Sans", sans-serif;
+  word-spacing: 1px;
+  color: #fff;
+}
+
+
+.medium-font {
+  font-size: 18px;
+}
+
+.small-font {
+  font-size: 15px;
+}
+
+.center {
+  text-align: center;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.m0 {
+  margin: 0;
+}
+
+.indent {
+  text-indent: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+p.top {
+  position: relative;
+  color: #82ff84;
+}
+
+h2 {
+  font-size: 34px;
+  color: antiquewhite;
+}
+
+h3 {
+  color: #82ff84;
+}
+
+p img {
+  width: 50%;
+
+}
+
+strong.block {
+  width: 230px;
+  margin: 10px auto 0 auto;
+}
+
+blockquote {
+  background: #113d11;
+  width: 90%;
+  margin: 30px auto;
+  padding: 16px;
+  font-style: italic;
+  box-shadow: 0 8px 6px -6px #1f4d1f;
+}
+
+blockquote p:before,
+blockquote p:after {
+  font-size: 1.5em;
+  vertical-align: sub;
+  font-weight: 400;
+  color: #82ff84;
+}
+
+blockquote p:before {
+  content: "\00201C";
+  margin-right: 0.2em;
+}
+
+blockquote p:after {
+  content: "\00201D";
+  margin-left: 0.2em;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+
+.copyright {
+  width: 80%;
+  margin-top: 10%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0.5rem 0;
+  /*bottom: 0;*/
+  text-align: center;
+  color: var(--primaryColor);
+  font-size: 0.8rem;
+  border-top: 1px solid var(--primaryColor);
+}
+
+@media (max-width: 320px) {
+  strong.block {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+
+
+  .padding-big {
+
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 30px;
+    color: antiquewhite
+  }
+
+  h2,
+  h3 {
+
+    margin: 40px 0 0 0;
+
+  }
+
+  h3 {
+    font-size: 26px;
+    color: #82ff84
+  }
+}
