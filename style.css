@@ -61,7 +61,7 @@ body {
 }
 
 img {
-   
+
     max-width: 100%;
 
 }
@@ -71,14 +71,15 @@ ul {
 }
 
 
-nav .my_logo{
-    color:gold;
+nav .my_logo {
+    color: gold;
     font-style: italic;
 }
 
-nav a{
-    text-decoration:wavy;
+nav a {
+    text-decoration: wavy;
 }
+
 .navbar {
     display: flex;
     width: 100%;
@@ -88,7 +89,7 @@ nav a{
     padding: 2rem;
     position: fixed;
     z-index: 3;
-    background-color: var(--secondaryColor);
+    background-color: rgb(137, 136, 197);
 }
 
 
@@ -96,12 +97,12 @@ nav a{
     width: 300px;
     display: flex;
     justify-content: space-around;
-    padding: 10px;
+    padding: 8px;
 }
 
 .navbar .menu>a {
     text-decoration: none;
-    color: var(--primaryColor);
+    color: gold;
 }
 
 .navbar .menu>a:hover {
@@ -123,28 +124,31 @@ nav a{
 
 .header-title>h2 {
     color: var(--secondaryColor);
-    font-size: 2.5rem;
-    margin-top: 4em;
+    font-size: 1.5rem;
+    margin-top: 7em;
 }
+
 
 .header-title>h2>span {
-    color: var(--secondaryColor);
-    padding: 0.1rem;
-    background-color: var(--primaryColor);
+    background-color: rgb(137, 136, 197);
+    padding: 10px;
+
     font-size: 1.5rem;
+    border-radius: 10px;
+    border: 2px solid var(--secondaryColor);
 }
 
 
-.header-title .btn{
+.header-title .btn {
     background-color: var(--secondaryColor);
     color: var(--whiteColor);
-    text-decoration:none;
+    text-decoration: none;
     padding: 0.5rem;
     margin: 1.5rem;
     width: 200px;
     border-radius: 35px;
-    border: 2px solid var(--secondaryColor);
-    box-shadow: 10px 10px 14px 1px rgb(0 0 /20%);
+    border: 2px solid gold;
+    box-shadow: 10px 10px 14px 10px rgb(0 0 /20%);
     cursor: pointer;
     transition: ease 0.2s;
 }
@@ -175,18 +179,19 @@ nav a{
 /*moving text*/
 .moving-words {
     font-size: 2rem;
+    padding:10px;
 }
 
 .text_1 {
     animation: text1;
-    color: greenyellow;
+    color: gold;
     font-weight: bold;
 }
 
 .text_2 {
     animation: text2;
-    color: cornsilk;
-    font-weight: bolder;
+    color: var(--secondaryColor);
+    font-weight: bold;
 }
 
 
@@ -210,7 +215,7 @@ nav a{
     right: 0;
     animation: caret infinite;
     animation-duration: 1s;
-    animation-timing-function: steps(1,  end);
+    animation-timing-function: steps(1, end);
 }
 
 
@@ -322,8 +327,9 @@ main {
 
 
 #heading {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 28em;
     align-items: center;
     margin-bottom: 10px;
 }
@@ -331,13 +337,13 @@ main {
 
 #heading h1 span {
     font-size: 1em;
-    color: #71BC2F;
+    color: cornsilk;
 }
 
 article {
     display: flex;
     align-items: flex-start;
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: 1px solid gold;
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
@@ -347,7 +353,7 @@ article {
 article.post:hover {
     border-style: dotted;
     border-width: 2px;
-    border-color:  red gold green skyblue;
+    border-color: red gold green skyblue;
     transform: scale(1.1);
     padding: 5px;
 
@@ -373,7 +379,7 @@ span {
 .skills .top-title {
 
     padding: 1em;
-    color: red;
+    color: rgb(137, 136, 197);
 
 }
 
@@ -422,11 +428,12 @@ span {
     align-items: center;
     width: 100%;
     padding: 3rem;
+    background-color: rgb(137, 136, 197);
 }
 
-.project a{
-   text-decoration:none;
-   color:cornsilk;
+.project a {
+    text-decoration: none;
+    color: cornsilk;
 }
 
 .project-wrapper {
@@ -441,6 +448,10 @@ span {
     overflow: hidden;
     margin: 0.5rem;
     position: relative;
+}
+
+.project>h1 {
+    padding-top: 15px;
 }
 
 .project-image {
@@ -501,7 +512,7 @@ span {
     width: 100%;
     padding: 0.5rem 1rem;
     position: relative;
-    background-color: var(--fontColor);
+    background-color: grey;
 }
 
 .hire a {
@@ -509,7 +520,7 @@ span {
 }
 
 .hire .top-title {
-    color: var(--primaryColor);
+    color: gold;
 }
 
 .hire-wrapper {
@@ -533,70 +544,109 @@ span {
 
 .copyright {
     width: 80%;
-   
+
     padding: 0.5rem 0;
     bottom: 0;
     text-align: center;
-    color: var(--primaryColor);
+    color: gold;
     font-size: 0.8rem;
-    border-top: 1px solid var(--primaryColor);
+    border-top: 1px solid gold;
 }
 
 @media screen and (max-width:480px) {
 
-   
-   nav .my_logo{
-   color:gold;
-   font-style: italic;
-   margin-left:0;
-   }
-    header{
-       height:100vh;
+
+    nav .my_logo {
+        color: gold;
+        font-style: italic;
+        margin-left: 0;
     }
+
+    header {
+        height: 100vh;
+    }
+
     h1 {
         font-size: 1.7rem;
     }
-    
-    .header-title>h2 {
-        position:relative;
-        margin-top: 15em;
-        font-size: 1rem;
-    }
-    .header-title .moving-words{
-        padding-top:10px;
-    }
-   .header-title blockquote{
-        position:relative;
-        margin-top:2em;
-        background:pink;
-        font-weight:bold;
-        padding-top:10px;
-   
-   }
-  
-  blockquote .hq{
-      color:red;
-  
-  }
-   
-   .post .text{
-      font-size:15px;
-   }
-  .project{
-      padding:0;
-    
-  }
-  .project #heading{
-       margin-top:1em;
-  }
 
- .project #heading h1{
-       font-size:20px;
- 
- }
- .project #heading .image{
-     
-    padding-left:100px;
-     
- }
+    .header-title>h2 {
+        position: relative;
+        margin-top: 15em;
+        font-size: 1em;
+
+    }
+
+    .header-title>h2>span {
+        background-color: rgb(137, 136, 197);
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid var(--secondaryColor);
+    }
+
+    .header-title .moving-words {
+        padding-top: 25px;
+        font-size: 1em;
+    }
+
+    .header-title blockquote {
+        position: relative;
+        margin-top: 2em;
+        background: rgb(137, 136, 197);
+        font-weight: bold;
+        padding-top: 5px;
+        color: black;
+        border-radius: 10px;
+
+
+    }
+
+
+
+
+    blockquote .hq {
+        color: gold;
+
+    }
+
+    blockquote>i {
+        padding: 4px;
+    }
+
+    .post .text {
+        font-size: 15px;
+    }
+
+
+    #heading {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 4em;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    #heading>a>img {
+        width: 70%;
+    }
+
+    .project {
+        padding: 0;
+
+    }
+
+    .project #heading {
+        margin-top: 1em;
+    }
+
+    .project #heading h1 {
+        font-size: 20px;
+
+    }
+
+    .project #heading .image {
+
+        padding-left: 100px;
+
+    }
 }

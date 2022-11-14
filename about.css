@@ -44,7 +44,7 @@ nav .my_logo {
     padding: 2rem;
     position: fixed;
     z-index: 3;
-    background-color: var(--secondaryColor);
+    background-color:  rgb(137, 136, 197) ;
 }
 
 
@@ -56,7 +56,7 @@ nav .my_logo {
 
 .navbar .menu>a {
     text-decoration: none;
-    color: var(--primaryColor);
+    color: gold;
 }
 
 .navbar .menu>a:hover {
@@ -78,7 +78,7 @@ nav .my_logo {
 }
 
 img {
-    max-width: 100%;
+    max-width: 80%;
     display: block;
 }
 
@@ -309,7 +309,7 @@ ul {
     width: 100%;
     padding: 0.5rem 1rem;
     position: relative;
-    background-color: var(--fontColor);
+    background-color: grey;
 }
 
 .hire a {
@@ -317,7 +317,7 @@ ul {
 }
 
 .hire .top-title {
-    color: var(--primaryColor);
+    color: gold;
 }
 
 .hire-wrapper {
@@ -349,9 +349,9 @@ ul {
     padding: 0.5rem 0;
     bottom: 0;
     text-align: center;
-    color: var(--primaryColor);
+    color: gold;
     font-size: 0.8rem;
-    border-top: 1px solid var(--primaryColor);
+    border-top: 1px solid gold;
 }
 
 

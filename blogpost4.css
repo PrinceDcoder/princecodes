@@ -45,7 +45,7 @@ nav .my_logo{
   top: 0;
   position: fixed;
   z-index: 3;
-  background-color: var(--secondaryColor);
+  background-color:  rgb(137, 136, 197);
 }
 
 
@@ -57,7 +57,7 @@ nav .my_logo{
 
 .navbar .menu>a {
   text-decoration: none;
-  color: var(--primaryColor);
+  color: gold;
 }
 
 .navbar .menu>a:hover {
@@ -68,7 +68,7 @@ nav .my_logo{
 
 .padding-big {
  
-  background-color: brown;
+  background-color: grey;
   padding: 50px 3%;
 }
 
@@ -78,12 +78,14 @@ img {
 }
 
 blockquote,
-img,
 strong.block {
   display: block;
   position: relative;
 }
 
+p > img {
+  width: 100%;
+}
 
 h1 {
   padding-top: 1em;
@@ -100,7 +102,7 @@ h3 {
 h1,
 h2,
 h3,
-li,
+
 p,
 strong {
   font-weight: 400;
@@ -115,15 +117,21 @@ h3 {
 li {
   font-family: "PT Sans", sans-serif;
   word-spacing: 2px;
-  color: #ccffcc;
-}
 
+  font-size: 15px;
+}
+ h5{
+   font-weight: bold;
+   font-size: 1.5em;
+ }
 p {
   font-family: "PT Sans", sans-serif;
   word-spacing: 1px;
   color: #fff;
 }
-
+ul > li > ol{
+  color:cornsilk;
+}
 
 .medium-font {
   font-size: 18px;
@@ -218,9 +226,9 @@ h3 {
   padding: 0.5rem 0;
   /*bottom: 0;*/
   text-align: center;
-  color: var(--primaryColor);
+  color: gold;
   font-size: 0.8rem;
-  border-top: 1px solid var(--primaryColor);
+  border-top: 1px solid gold;
 }
 
 @media (max-width: 320px) {
